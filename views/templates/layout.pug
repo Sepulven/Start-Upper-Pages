@@ -1,0 +1,99 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="styles/style.css", attr)
+		link(rel="stylesheet", href="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==")
+		// Connect to google api
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		// Red Hat Display
+		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet"> 
+		// Montserrat
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+		// Saira Semi Condensed
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Saira+Semi+Condensed:wght@900&display=swap" rel="stylesheet">
+		script(src="scripts/script.js" defer='true') 
+		title Start Upper
+	body
+		block navbar
+			nav(class=` sticky top-0 z-50
+						text-white
+						drop-shadow-md
+						bg-grey
+						flex flex-col sm:flex-row justify-between
+						h-1/5 `)
+				// make an animation that shows the logo
+				div(class=`bg-white h-14 flex flex-row items-center justify-between`) 
+					div(class='flex flex-row items-center')
+						img(class='h-20' src='imgs/blackbull/blackbull_svg.svg' id='icon-articles')
+						img(class=`h-12 w-auto mr-5` src='imgs/logo.png')
+					img(class='h-11  mr-5 sm:hidden' src="imgs/hamburguer.svg" id='icon-hamburguer' alt="Hamburguer Icon")
+				// TODO: Todas as vezes que faz o resize apartir de 640 fica quebrado e da o display do menu mesmo que não queremos
+				ul(class=`  flex flex-col sm:flex-row
+							font-title md:text-2xl text-xl
+							trasition duration-700
+							` id='hamburguer_menu')
+					li(class='md:px-2  px-1 py-3 hover:bg-light-grey') About Us 
+					li(class='md:px-2  px-1 py-3 hover:bg-light-grey') Prices
+					li(class='md:px-2  px-1 py-3 hover:bg-light-grey') Log In
+					li(class='md:px-2  px-1 py-3 hover:bg-light-grey') Sign In
+					li(class='md:px-2  px-1 py-3 sm:mr-5 hover:bg-light-grey') FAQ
+		block sidebar 
+			section(class=` flex flex-row 
+							fixed z-50 hidden
+							w-screen` id='articles_menu')
+				div(class=` flex flex-col items-center
+							bg-bluish-gray
+							h-screen w-full sm:w-1/3`)
+					article(class=`mt-1 flex flew-row
+								h-36 w-11/12
+								`)
+						div(class=`flex justify-center items-center
+								w-1/4
+								rounded-l`)
+							img(class='h-5/6 rounded-full' src='imgs/redbull/redbull.jpg')
+						div(class=` flex flex-col items-left
+								w-3/4
+								rounded-r`)
+							h3(class=`text-4xl
+									ml-10 my-2
+							font-bold font-subtitle`) Title 1
+							p(class=`font-body
+									ml-8`) Content
+				div(class=` backdrop-blur-sm z-1
+							bg-opacity-20 bg-white
+							h-screen w-1/2
+							`)
+		block header
+			header(class=`flex justify-center items-center
+						  bg-sea-sky
+						  h-96 w-full`)
+				div(class=`py-20 px-10
+						   backdrop-blur-sm  bg-opacity-5 drop-shadow-md`)
+					h1(class=` 
+							   font-title text-white md:text-6xl sm:text-5xl text-4xl h-full
+							   before:content before:border-white before:border-r-4 before:mr-5 
+							`) A good investment gives you time!
+		block main
+			section(class=`bg-rose
+						h-1/2 w-full`)
+				p Conteudo principal
+		block content 
+
+			section(class=`bg-rose
+						h-96 w-full`)
+				p White
+			section(class=`bg-white
+						h-96 w-full`)
+				p(class=` text-6xl
+							`) prices and services  
+		block foot
+			footer(class=`bg-grey
+						h-96 w-full`)
+				p(class=` text-6xl
+							`) footer  
+				p.
+					Descrição por menores
