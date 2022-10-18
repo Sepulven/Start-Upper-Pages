@@ -18,7 +18,9 @@ module.exports = {
       'body' : '"Red Hat Display"'
     },
     backgroundImage: {
-      'sea-sky': "url('../imgs/sky-sea.jpg')" // Estamos dentro da pagina styles
+      'sea-sky': "url('../imgs/sky-sea.jpg')", // Estamos dentro da pagina styles
+      'cloth': "url('../imgs/cloth.jpg')",
+      'cow': "url('../imgs/cow.jpeg')"
     }
   },
   plugins: [],

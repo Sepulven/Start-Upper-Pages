@@ -1,0 +1,22 @@
+nav(class=` sticky top-0 z-50
+						text-white
+						drop-shadow-md
+						bg-grey
+						flex flex-col sm:flex-row justify-between
+						h-1/5 `)
+    div(class=`bg-white h-14 flex flex-row items-center justify-between`) 
+        div(class='flex flex-row items-center')
+            img(class='h-20' src='imgs/blackbull/blackbull_svg.svg' id='icon-articles')
+            img(class=`h-12 w-auto mr-5` src='imgs/logo.png')
+        img(class='h-11  mr-5 sm:hidden' src="imgs/hamburguer.svg" id='icon-hamburguer' alt="Hamburguer Icon")
+    // TODO: Todas as vezes que faz o resize apartir de 640 fica quebrado e da o display do menu mesmo que não queremos
+    ul(class=`  flex flex-col sm:flex-row
+                font-title md:text-2xl text-xl
+                trasition duration-700
+                ` id='hamburguer_menu')
+        li(class='md:px-2  px-1 py-3 hover:bg-light-grey')  
+            a(href='#aboutUs') About Us
+        li(class='md:px-2  px-1 py-3 hover:bg-light-grey') Prices
+        li(class='md:px-2  px-1 py-3 hover:bg-light-grey') Log In
+        li(class='md:px-2  px-1 py-3 hover:bg-light-grey') Sign In
+        li(class='md:px-2  px-1 py-3 sm:mr-5 hover:bg-light-grey') FAQ
