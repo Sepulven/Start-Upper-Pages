@@ -27,13 +27,8 @@ html(lang="en")
 		block content 
 			include ../includes/_aboutUs.pug
 		block main
-			section(class=`bg-rose
+			//section(class=`bg-rose
 						h-1/2 w-full`)
 				p Conteudo principal
 		block foot
-			footer(class=`bg-grey
-						h-96 w-full`)
-				p(class=` text-6xl
-							`) footer  
-				p.
-					Descrição por menores
+			include ../includes/_footer.pug
