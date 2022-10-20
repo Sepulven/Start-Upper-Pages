@@ -1,18 +1,30 @@
 footer(class=`bg-grey
-            h-96 w-full h-full`)
+            h-96 w-full`)
     div(class=`flex items-center justify-center h-full`)
-        div(class='h-full w-1/4 bg-white')
-            div(class='h-full w-fullgrid grid-cols-2 grid-rows-3')
-                img(class='h-10 w-10' src='imgs/js-logo.png')
-                img(class='h-10 w-10' src='imgs/expressjs.png')
-                img(class='h-10 w-10' src='imgs/mongodb.jpg')
-                img(class='h-10 w-10' src='imgs/socket.io.svg')
-                img(class='h-10 w-10' src='imgs/pugjs.jpeg')
-                img(class='h-10 w-10' src='imgs/tailwindcss.jpg')
+        div(class='h-full bg-white w-1/4 grid place-content-center place-items-center grid-cols-2')
+            div(class=`bg-light-grey drop-shadow-2xl rounded p-1 mb-3`)
+                img(class='h-20' src='imgs/js-logo.png')
+            div(class=`bg-light-grey drop-shadow-2xl rounded p-1 mb-3`)
+                img(class='h-20' src='imgs/expressjs.png')
+            div(class=`bg-light-grey drop-shadow-2xl rounded p-1 mb-3`)
+                img(class='h-20' src='imgs/mongodb.jpg')
+            div(class=`bg-light-grey drop-shadow-2xl rounded p-1 mb-3`)
+                img(class='h-20' src='imgs/socket.io.svg')
+            div(class=`bg-light-grey drop-shadow-2xl rounded p-1 mb-3`)
+                img(class='h-20' src='imgs/pugjs.jpg')
+            div(class=`bg-light-grey drop-shadow-2xl rounded p-1 mb-3`)
+                img(class='h-20' src='imgs/tailwindcss.jpg')
         div(class=`w-1/2 h-full`)
+            div(class='text-white px-20 py-10')
+                h3(class=`font-title text-3xl mb-10
+                           before:content before:border-red before:border-r-4 before:mr-5 
+                          after:content-['?'] after:text-red`) Who is Arthur Aguiar and what is Star Upper
+                p(class=`font-body`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+                p(class=`font-body`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+                p(class=`font-body`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
         div(class=`w-1/4 h-full`)
             div(class=`grid relative h-1/2`)
-                svg(class=`rotate-180` xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320")
+                svg(class=`rotate-180 shadow shadow-inner` xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320")
                     path(fill="#FFF" fill-opacity="1" d="M0,128L60,106.7C120,85,240,43,360,26.7C480,11,600,21,720,69.3C840,117,960,203,1080,202.7C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z")
                 img(class='drop-shadow-md mt-10 absolute place-self-center z-10 rounded-full h-full' src='imgs/dev.jpg')
             div(class=`h-1/2`)

@@ -1,23 +1,5 @@
-doctype html
-html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(http-equiv="X-UA-Compatible", content="IE=edge")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		link(rel="stylesheet", href="styles/style.css", attr)
-		link(rel="stylesheet", href="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==")
-		// Connect to google api
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		// Red Hat Display
-		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet"> 
-		// Montserrat
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
-		// Saira Semi Condensed
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Saira+Semi+Condensed:wght@900&display=swap" rel="stylesheet">
-		script(src="scripts/script.js" defer='true') 
-		title Start Upper
-	body
+// Header of the html
+include ../includes/header.pug 
 		block navbar
 			include ../includes/_navbar.pug
 		block sidebar 

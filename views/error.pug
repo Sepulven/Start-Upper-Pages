@@ -1,0 +1,15 @@
+include includes/header.pug
+// TODO: Make it responsible
+main(class=` flex items-center justify-center
+             bg-white h-screen w-screen`)
+    div(class=`flex sm:flex-row flex-col h-2/3 w-2/3`)
+        div(class=`w-1/3 bg-grey rounded-l-md flex flex-col p-10`)
+                img(class=`h-2/3 rounded-full mb-10` src='imgs/redbull/redbull-moon.jpg')
+                h2(class=`w-full font-title text-8xl text-black
+                          bg-white text-center`) 404
+        div(class=` w-2/3 p-14 rounded-r flex flex-col items-center justify-evenly
+                    text-black bg-rose`)
+            h1(class=`sm:text-9xl text-7xl font-title mt-10 mb-4
+                      before:content before:border-red before:border-r-4 before:mr-5 `) Not Found
+            p(class=`font-body text-lg`) 
+                = "   Erro's message - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
