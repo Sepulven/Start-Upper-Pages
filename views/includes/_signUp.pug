@@ -1,0 +1,30 @@
+section(class=` backdrop-blur-sm shadow-inner-3xl
+                flex items-center justify-center
+                h-screen`)
+    div(class=` bg-white shadow-3xl
+                flex flex-row rounded-md h-fit`)
+        div(class=``)
+            img(class=` hover:object-contain
+                        h-128 rounded-l-md`
+                src='imgs/trees-mountains.jpeg')
+        div(class=`py-20 pl-20`)
+            form(action="", method="post")
+                h2(class=` font-title text-5xl mb-10
+                            before:content before:border-red before:border-r-4 before:mr-5 `) Sign Up
+                //TODO: Create a first name last name
+                span(class=`font-subtitle `) Name
+                    span(class=`font-body text-sm`) ='(It has to contain at least 3 letters)'
+                input(class=` w-2/3 h-16  mb-10 shadow-inner-lg rounded
+                              ` type='text' placeholder='Arthur Aguiar' )
+                input(class=` w-2/3 h-16  mb-10 shadow-inner-lg rounded
+                            ` type="email" placeholder='example@mail.com' name="")
+                input(class=` w-2/3 h-16 mb-10 shadow-inner-lg rounded
+                            ` type="password" placeholder='password' name="")
+                input(class=` w-2/3 h-16 mb-10 shadow-inner-lg rounded
+                            ` type="password" placeholder='password' name="")
+                div(class=`flex flex-row items-center`)
+                    a(class=` underline underline-offset-7 text-red
+                              ` href='#')  Already registered?
+                    input(class=` bg-bluish-gray text-3xl rounded
+                                  font-subtitle font-bold p-3 ml-5 text-white
+                                ` type="submit" value="Log in")

@@ -1,16 +1,20 @@
 // Header of the html
 include ../includes/header.pug 
-		block navbar
-			include ../includes/_navbar.pug
-		block sidebar 
-			include ../includes/_sidebar.pug
-		block header
-			include ../includes/_header.pug
-		block content 
-			include ../includes/_aboutUs.pug
-		block main
-			//section(class=`bg-rose
-						h-1/2 w-full`)
-				p Conteudo principal
-		block foot
-			include ../includes/_footer.pug
+
+block navbar
+	include ../includes/_navbar.pug
+block sidebar 
+	include ../includes/_sidebar.pug
+block header
+	include ../includes/_header.pug
+block content 
+	include ../includes/_aboutUs.pug
+	include ../includes/_prices.pug
+	include ../includes/_signUp.pug
+	include ../includes/_logIn.pug
+block main
+	//section(class=`bg-rose
+				h-1/2 w-full`)
+		p Conteudo principal
+block foot
+	include ../includes/_footer.pug

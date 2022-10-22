@@ -1,0 +1,29 @@
+section(class=` backdrop-blur-sm shadow-inner-3xl
+                flex items-center justify-center
+                h-screen`)
+    div(class=` bg-white shadow-3xl
+                flex flex-row rounded-md h-fit`)
+        div(class=`flex justify-center`)
+            h3(class=`  self-bottom backdrop-blur-sm rounded p-6
+                        absolute mt-20
+                        before:content before:border-white before:border-r-4 before:mr-5 
+                        text-white text-5xl font-title`) Hello, Welcome back!
+            img(class=` absolute h-16 rounded-full mt-2` src=`imgs/redbull/redbull-moon.jpg`)
+            img(class=` hover:object-contain
+                        h-128 rounded-l-md`
+                src='imgs/sky-sea.jpg')
+        div(class=`py-20 pl-20`)
+            form(action="", method="post")
+                h2(class=` font-title text-5xl mb-10
+                            before:content before:border-red before:border-r-4 before:mr-5 `) Login 
+                input(class=` w-2/3 h-16  mb-10 shadow-inner-lg rounded
+                            ` type="email" placeholder='example@mail.com' name="")
+                input(class=` w-2/3 h-16 mb-10 shadow-inner-lg rounded
+                              placeholder:before:content placeholder:before:border-red placeholder:before:border-r-4 placeholder:before:mr-5
+                            ` type="password" placeholder='password' name="")
+                div(class=`flex flex-row items-center`)
+                    a(class=` underline underline-offset-7 text-red
+                              ` href='#')  Not Registered?
+                    input(class=` bg-bluish-gray text-3xl rounded
+                                  font-subtitle font-bold p-3 ml-5 text-white
+                                ` type="submit" value="Log in")

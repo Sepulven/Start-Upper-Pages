@@ -1,13 +1,13 @@
-nav(class=` sticky top-0 z-50
-						text-white
-						drop-shadow-md
-						bg-grey
-						flex flex-col sm:flex-row justify-between
-						h-1/5 `)
-    div(class=`bg-white h-14 w-1/4 flex flex-row items-center justify-between`) 
+nav(class=` sticky top-0 z-50 w-full
+			flex flex-col sm:flex-row justify-between
+			text-white shadow-md bg-grey
+		    `)
+
+    div(class=`bg-white h-14 xl:w-1/4
+               flex flex-row items-center justify-between`) 
         div(class='flex flex-row items-center')
             img(class='h-20' src='imgs/blackbull/blackbull_svg.svg' id='icon-articles')
-            img(class=`h-12 w-auto mr-5` src='imgs/logo.png')
+            img(class=`md:h-14 h-12 mr-5` src='imgs/logo.png')
         img(class='h-11  mr-5 sm:hidden' src="imgs/hamburguer.svg" id='icon-hamburguer' alt="Hamburguer Icon")
     // TODO: Todas as vezes que faz o resize apartir de 640 fica quebrado e da o display do menu mesmo que não queremos
     ul(class=`  flex flex-col sm:flex-row
