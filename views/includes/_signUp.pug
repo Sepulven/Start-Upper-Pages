@@ -1,30 +1,53 @@
+// TODO: Make an animation whenever a field is on focus change from inner-shadow to shadow
+// In order to show that the field is on focus
+
 section(class=` backdrop-blur-sm shadow-inner-3xl
-                flex items-center justify-center
-                h-screen`)
-    div(class=` bg-white shadow-3xl
-                flex flex-row rounded-md h-fit`)
-        div(class=``)
-            img(class=` hover:object-contain
-                        h-128 rounded-l-md`
-                src='imgs/trees-mountains.jpeg')
-        div(class=`py-20 pl-20`)
-            form(action="", method="post")
-                h2(class=` font-title text-5xl mb-10
-                            before:content before:border-red before:border-r-4 before:mr-5 `) Sign Up
-                //TODO: Create a first name last name
-                span(class=`font-subtitle `) Name
-                    span(class=`font-body text-sm`) ='(It has to contain at least 3 letters)'
-                input(class=` w-2/3 h-16  mb-10 shadow-inner-lg rounded
-                              ` type='text' placeholder='Arthur Aguiar' )
-                input(class=` w-2/3 h-16  mb-10 shadow-inner-lg rounded
-                            ` type="email" placeholder='example@mail.com' name="")
-                input(class=` w-2/3 h-16 mb-10 shadow-inner-lg rounded
-                            ` type="password" placeholder='password' name="")
-                input(class=` w-2/3 h-16 mb-10 shadow-inner-lg rounded
-                            ` type="password" placeholder='password' name="")
-                div(class=`flex flex-row items-center`)
-                    a(class=` underline underline-offset-7 text-red
-                              ` href='#')  Already registered?
-                    input(class=` bg-bluish-gray text-3xl rounded
-                                  font-subtitle font-bold p-3 ml-5 text-white
-                                ` type="submit" value="Log in")
+				flex items-center justify-center
+				h-screen`)
+	// TODO: change the bg back to white when fineshed
+	div(class=` bg-rose shadow-3xl
+				flex flex-row rounded-md h-fit`)
+		div(class=`flex justify-center`)
+			img(class=` object-contain
+						h-144 rounded-l-md`
+				src='imgs/trees-mountains.jpeg')
+			// TODO: Ajustar o mb quando corrigir o layout
+			div(class=`self-end flex flex-col items-center absolute z-10 mb-10`)
+				img(class=` w-20 h-20 block rounded-full mb-2` src=`imgs/blackbull/blackbull_bg-black.jpg`)
+		div(class=`py-10 pl-20`)
+			form(class=`flex flex-col` action="" method="post")
+				h2(class=` font-title text-5xl mb-10
+							before:content before:border-red before:border-r-4 before:mr-5 `) Sign Up
+				div(class=``)
+					span(class=`block font-title leading-8 mb-3`)
+						p(class=`text-md inline-block underline underline-offset-8 decoration-4 decoration-blue`)=`Name`
+						p(class=`text-sm inline-block underline underline-offset-8 decoration-4 decoration-blue`)=`(At least 3 letters in each field.)`
+					input(class=` w-80 h-12  mb-3 mr-10 shadow-inner-lg rounded inline-block
+								text-2xl` type='text' placeholder='First name' )
+					input(class=` w-80 h-12  mb-3 mr-10 shadow-inner-lg rounded inline-block
+								text-2xl` type='text' placeholder='Last name' )                            
+				div(class=``)
+					span(class=`block font-title leading-8 mb-3`)
+						p(class=`text-md inline-block underline underline-offset-8 decoration-4 decoration-blue`)=`Email`
+						p(class=`text-sm inline-block underline underline-offset-8 decoration-4 decoration-blue`)=`(Needs to follow the standart rules.)`
+					input(class=` w-128 h-12  mb-3 mr-10 shadow-inner-lg rounded
+								  text-2xl` type='email' placeholder='example@mail.com' )
+				div(class=`font-subtitle leading-none mb-3 block`)
+					p(class=`font-title text-xl block decoration-4 decoration-blue`)
+						=`Password`
+					div(class=`inline-block`)
+						p(class=`text-xs block underline underline-offset-8 decoration-4 decoration-blue`)
+							=`(At least 8 characters, 1 uppercase alpha and 1 special character.)` 
+						input(class=` w-80 h-12 mr-10 shadow-inner-lg rounded block
+									  text-2xl` type='password' placeholder='Password' )
+					div(class=`inline-block`)
+						p(class=`text-xs block underline underline-offset-8 decoration-4 decoration-blue`)
+							=`(Confirm the password of yours)` 
+						input(class=` w-80 h-12 mr-10 shadow-inner-lg rounded block
+									text-2xl` type='password' placeholder='Conf-Password' )
+				div(class=`self-end mr-10`)
+					a(class=` hover:underline underline-offset-7 text-green inline-block
+							  ` href='#')  Already registered?
+					input(class=` bg-blue text-3xl rounded inline-block
+								  font-subtitle font-bold p-3 ml-5 text-white
+								` type="submit" value="Log in")
