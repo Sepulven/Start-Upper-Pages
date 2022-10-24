@@ -1,36 +1,52 @@
-// TODO: Make it responsive 
-// TODO: Place so content below arthur's photo
-footer(class=`bg-grey
-            h-96 w-full`)
-    div(class=`flex items-center justify-center h-full`)
-        div(class='h-full bg-white w-1/4 grid place-content-center place-items-center grid-cols-2')
-            div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
-                img(class='h-20' src='imgs/js-logo.png')
-            div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
-                img(class='h-20' src='imgs/expressjs.png')
-            div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
-                img(class='h-20' src='imgs/mongodb.jpg')
-            div(class=`shadow-2xl rounded p-1 mb-3`)
-                img(class='h-20' src='imgs/socket.io.svg')
-            div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
-                img(class='h-20' src='imgs/pugjs.jpg')
-            div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
-                img(class='h-20' src='imgs/tailwindcss.jpg')
-        div(class=`w-1/2 h-full`)
-            div(class='text-white px-20 py-10')
-                h3(class=`font-title text-3xl mb-10
-                           before:content before:border-red before:border-r-4 before:mr-5 
-                          after:content-['?'] after:text-red`) Who is Arthur Aguiar and what is Star Upper
-                p(class=`font-body`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-                p(class=`font-body`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-                p(class=`font-body`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-        div(class=`w-1/4 h-full`)
-            div(class=`grid relative h-1/2`)
-                svg(class=`rotate-180 shadow shadow-inner` xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320")
-                    path(fill="#FFF" fill-opacity="1" d="M0,128L60,106.7C120,85,240,43,360,26.7C480,11,600,21,720,69.3C840,117,960,203,1080,202.7C1200,203,1320,117,1380,74.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z")
-                img(class='drop-shadow-md mt-10 absolute place-self-center z-10 rounded-full h-full' src='imgs/dev.jpg')
-            div(class=`h-1/2`)
-                img(class='h-10' src='imgs/twitter.svg')
-                img(class='h-10' src='imgs/github-w.svg')
-                img(class='h-11' src='imgs/instagram.svg')
-                img(class='h-11' src='imgs/linkedin.svg')
+// TODO: Make it responsive  in md breakpoints
+// TODO: the wave is no longer fitting
+footer(class=`flex sm:flex-row  flex-col items-center justify-center
+             bg-grey sm:h-96 sm:w-full`)
+    div(class=` sm:order-first order-last grid place-content-center place-items-center grid-cols-2 
+                bg-white
+                sm:h-full h-screen 
+                sm:w-1/4 w-screen`)
+        div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
+            img(class='sm:h-20 h-28' src='imgs/js-logo.png')
+        div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
+            img(class='sm:h-20 h-28' src='imgs/expressjs.png')
+        div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
+            img(class='sm:h-20 h-28' src='imgs/mongodb.jpg')
+        div(class=`shadow-2xl rounded p-1 mb-3`)
+            img(class='sm:h-20 h-28' src='imgs/socket.io.svg')
+        div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
+            img(class='sm:h-20 h-28' src='imgs/pugjs.jpg')
+        div(class=`bg-black drop-shadow-2xl rounded p-1 mb-3`)
+            img(class='sm:h-20 h-28' src='imgs/tailwindcss.jpg')
+    div(class=` sm:h-96 h-screen
+                sm:w-1/2 w-screen
+                text-white  p-14`)
+        h3(class=`font-title sm:text-3xl text-4xl mb-10
+                    before:content before:border-red before:border-r-4 before:mr-5 
+                    after:content-['?'] after:text-red`) Who is Arthur Aguiar and what is Star Upper
+        p(class=`font-body text-xl`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+        p(class=`font-body text-xl`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+        p(class=`font-body text-xl`)='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+    div(class=` sm:order-last order-first 
+                flex flex-col justify-between pb-24
+                sm:h-96 h-screen
+                sm:w-1/4 w-screen
+                sm:border-none border-white border-b-2
+                `)
+        div(class=`relative flex justify-center
+                    sm:w-full w-screen`)
+            img(class=`  sm:w-full w-screen object-cover absolute rotate-180` src='imgs/wave.svg')
+            img(class=`   mt-5 absolute z-1 rounded-full sm:h-44 h-72` src='imgs/dev.jpg')
+        div(class=`flex flex-col
+                    sm:mb-10 mt-20 sm:w-full w-screen`)
+            h4(class=`  self-center mb-3
+                        before:content before:border-red before:border-r-4 before:mr-5 
+                        after:content-['!'] after:text-red
+                        mb-24 text-justify
+                        font-title text-white 
+                        sm:text-3xl text-5xl`) Help me create new apps
+            div(class=` flex flex-row justify-center`)
+                img(class='sm:h-11 h-20' src='imgs/twitter.svg')
+                img(class='sm:h-11 h-20' src='imgs/github-w.svg')
+                img(class='sm:h-11 h-20' src='imgs/instagram.svg')
+                img(class='sm:h-11 h-20' src='imgs/linkedin.svg')
